@@ -6,7 +6,7 @@ Screens under 650px:
 
 Screens between 651 and 850px:
 
-![411 to 850px example](img/651to850.png)
+![651 to 850px example](img/651to850.png)
 
 Screens over 850px:
 
