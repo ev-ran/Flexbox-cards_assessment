@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Raleway", "Helvetica", sans-serif;
+  font-weight: 400;
+  color: #2F3442;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+.cardContainer {
+  /* display */
+  display: flex;
+  flex-direction: row;
+  width: 900px;
+  height: 215px;
+  margin: 20px auto;
+  border: 1px solid #CAD0D2;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.card {
+  /* display, flex-direction, flex-grow, flex-basis */
+  height: 200px;
+  width: 300px;
+  flex-basis: 33.3%;
+  flex-grow: 1;
+  min-width: 200px;
+  display: flex;
+  flex-flow: column;
+  border: 1px solid #CAD0D2;
+  border-radius: 4px;
+  margin: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 5px 5px 15px -6px rgba(0, 0, 0, 0.82);
+  box-shadow: 5px 5px 15px -6px rgba(0, 0, 0, 0.82);
+}
+
+.cardDescription {
+  /* display, flex-direction, align-items, flex-grow */
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 15px 0;
+}
+
+.cardDescriptionIcon {
+  height: 50%;
+  font-size: 55px;
+  margin: 10px;
+  color: #BCD2DA;
+}
+
+.cardDescriptionText {
+  height: 50%;
+  color: #57727C;
+  font-size: 16px;
+  text-align: center;
+  max-width: calc(100% - 30px);
+}
+
+.card:nth-of-type(3) .cardDescriptionText p {
+  margin-top: 4px;
+}
+
+.cardPrice {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #57727C;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px;
+  border-top: 1px solid #D7DBDD;
+  background-color: #EEF3F5;
+}
+
+.cardPrice p {
+  margin: 0;
+}
+
+nav {
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+nav a {
+  font-size: 0.9em;
+  border: 1px solid #BCD2DA;
+  background-color: #EEF3F5;
+  padding: 0 5px;
+  margin-right: 15px;
+}
+
+#for_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 100px) and (max-width: 660px) {
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 315px;
+    height: 640px;
+    margin: 2px auto;
+  }
+  .card.card:nth-of-type(3) {
+    margin-bottom: 15px;
+  }
+  nav {
+    width: 315px;
+  }
+  nav a {
+    font-size: 0.7em;
+    border: 1px solid #BCD2DA;
+    background-color: #EEF3F5;
+    padding: 0 5px;
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 661px) and (max-width: 950px) {
+  .cardContainer {
+    display: flex;
+    flex-flow: row wrap;
+    width: 650px;
+    height: 430px;
+    margin: 2px auto;
+    justify-content: center;
+  }
+  .card:nth-of-type(1) {
+    /* flex: 1 50%; */
+    height: 200px;
+  }
+  .card:nth-of-type(2) {
+    /* flex: 1 50%; */
+    height: 200px;
+  }
+  .card:nth-of-type(3) {
+    flex-grow: 0;
+    flex-basis: 300px;
+    height: 200px;
+  }
+  nav {
+    width: 650px;
+  }
+  nav a {
+    font-size: 0.8em;
+    border: 1px solid #BCD2DA;
+    background-color: #EEF3F5;
+    padding: 0 5px;
+    margin-right: 15px;
+  }
+}

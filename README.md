@@ -1,13 +1,27 @@
-## Responsive Design - Media Queries - for mobile / tablet / desktop browsers.
-
-Screens under 650px:
+## Flexbox Layout .  Responsive Design - variants - for mobile / tablet / desktop browsers.
+Variants  with units:  px    and units:  vw
+Mobile var:
 
 ![under 650px example](img/under650.png)
 
-Screens between 651 and 850px:
+Tablet var:
 
 ![651 to 850px example](img/651to850.png)
 
-Screens over 850px:
+Desktop var:
 
 ![over 850px example](img/over850.png)
+
+## Grid Layout .  Units:  px.  Responsive Design - variants - for mobile / tablet / desktop browsers.
+
+Mobile var:
+
+![under 650px example](img/grid-mobile.png)
+
+Tablet var:
+
+![651 to 850px example](img/grid-tablet.png)
+
+Desktop var:
+
+![over 850px example](img/grid-pc.png)

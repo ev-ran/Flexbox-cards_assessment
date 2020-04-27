@@ -5,41 +5,76 @@
 	<script src="https://use.fontawesome.com/7e33854498.js"></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="./assets/css/cards.css" />
-	<title>Document</title>
+	<!-- <link rel="stylesheet" type="text/css" href="./assets/css/cards.css" /> -->
+	<title>Cards</title>
+	<link id="s1" rel="stylesheet" href="./assets/css/cards_01.css">
+    <link id="s2" rel="stylesheet" href="./assets/css/cards_02.css" disabled=true>
+    <link id="s3" rel="stylesheet" href="./assets/css/cards_03.css" disabled=true>
 </head>
 
 
 
-
 <body>
+	<nav>
+		<!-- Style: &nbsp; -->
+		<a href="javascript:s1.disabled=false; s2.disabled=true; s3.disabled=true; ">
+			Layout: Flexbox<br>Units: px</a>
+		&nbsp;
+		<a href="javascript:s2.disabled=false; s1.disabled=true; s3.disabled=true;">
+			Layout: Flexbox<br>Units: vw</a>
+		&nbsp;
+		<a href="javascript:s3.disabled=false; s1.disabled=true; s2.disabled=true;">
+			Layout: Grid</a>
+	</nav>
+	<p id="clear"></p>
 	<div class="cardContainer">
 		<div class="card">
 			<div class="cardDescription">
 				<div class="cardDescriptionIcon fa fa-thumbs-o-up"></div>
-				<div class="cardDescriptionText"><p><b>Trial</b></p></div>
+				<div class="cardDescriptionText">
+					<p><b>Trial</b></p>
+				</div>
 			</div>
-			<div class="cardPrice"><p><b>Free!</b></p></div>
+			<div class="cardPrice">
+				<p><b>Free!</b></p>
+			</div>
 		</div>
 		<div class="card">
 			<div class="cardDescription">
 				<div class="cardDescriptionIcon fa fa-trophy"></div>
-				<div class="cardDescriptionText"><p><b>Basic tier<br />(most popular)</b></p>
+				<div class="cardDescriptionText">
+					<p><b>Basic tier<br />(most popular)</b></p>
 				</div>
 			</div>
-			<div class="cardPrice"><p><b>$10.00</b></p></div>
+			<div class="cardPrice">
+				<p><b>$10.00</b></p>
+			</div>
 		</div>
 		<div class="card">
 			<div class="cardDescription">
 				<div class="cardDescriptionIcon fa fa-bolt"></div>
-				<div class="cardDescriptionText"><p><b>Advanced tier<br />
-					(only for enterprise-level professionals)</b></p>
+				<div class="cardDescriptionText">
+					<p><b>Advanced tier<br />
+							(only for enterprise-level professionals)</b></p>
 				</div>
 			</div>
-			<div class="cardPrice"><p><b>$6,000.00</b></p></div>
+			<div class="cardPrice">
+				<p><b>$6,000.00</b></p>
+			</div>
 		</div>
 	</div>
-</body>
 
+	<!-- <div id="for_button">
+		<button onclick="new_clone()">Want more?</button>
+	</div> -->
+</body>
+<!-- <script>
+	function new_clone() {
+		var card_origin = document.getElementsByClassName("cardContainer")[0];
+		var cln = card_origin.cloneNode(true);
+		document.body.appendChild(cln);
+	}
+
+</script> -->
 
 </html>
