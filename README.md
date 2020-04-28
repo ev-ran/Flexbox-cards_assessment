@@ -1,5 +1,7 @@
-## Flexbox Layout .  Responsive Design - variants - for mobile / tablet / desktop browsers.
-Variants  with units:  px    and units:  vw
+
+## Flexbox Layout.  Responsive Design - for mobile / tablet / desktop browsers.
+Variant 01: units:  px  |  Variant 02: units:  vw
+
 Mobile var:
 
 ![under 650px example](img/under650.png)
@@ -12,7 +14,7 @@ Desktop var:
 
 ![over 850px example](img/over850.png)
 
-## Grid Layout .  Units:  px.  Responsive Design - variants - for mobile / tablet / desktop browsers.
+## Grid Layout.  Responsive Design - for for mobile / tablet / desktop browsers.
 
 Mobile var:
 
