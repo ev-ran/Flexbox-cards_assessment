@@ -1,3 +1,6 @@
+## Assessment: Flexbox Cards
+ 
+![-](img/flexBox.png)
 
 ## Flexbox Layout.  Responsive Design - for mobile / tablet / desktop browsers.
 Variant 01: units:  px  |  Variant 02: units:  vw

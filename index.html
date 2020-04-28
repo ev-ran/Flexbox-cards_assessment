@@ -5,11 +5,15 @@
 	<script src="https://use.fontawesome.com/7e33854498.js"></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- <link rel="stylesheet" type="text/css" href="./assets/css/cards.css" /> -->
+	<!-- <link rel="stylesheet" type="text/css" href="./assets/css/cards_00.css" /> -->
 	<title>Cards</title>
-	<link id="s1" rel="stylesheet" href="./assets/css/cards_01.css">
+
+	
+	<link id="s0" rel="stylesheet" href="./assets/css/cards_00.css">
+	<link id="s1" rel="stylesheet" href="./assets/css/cards_01.css" disabled=true>
     <link id="s2" rel="stylesheet" href="./assets/css/cards_02.css" disabled=true>
-    <link id="s3" rel="stylesheet" href="./assets/css/cards_03.css" disabled=true>
+	<link id="s3" rel="stylesheet" href="./assets/css/cards_03.css" disabled=true> 
+
 </head>
 
 
@@ -17,13 +21,16 @@
 <body>
 	<nav>
 		<!-- Style: &nbsp; -->
-		<a href="javascript:s1.disabled=false; s2.disabled=true; s3.disabled=true;">
+		<a href="javascript:s0.disabled=false; s1.disabled=true; s2.disabled=true; s3.disabled=true;">
+			Flexbox</a>
+		&nbsp;
+		<a href="javascript:s1.disabled=false; s0.disabled=true; s2.disabled=true; s3.disabled=true;">
 			Layout: Flexbox<br>Units: px</a>
 		&nbsp;
-		<a href="javascript:s2.disabled=false; s1.disabled=true; s3.disabled=true;">
+		<a href="javascript:s2.disabled=false; s0.disabled=true; s1.disabled=true; s3.disabled=true;">
 			Layout: Flexbox<br>Units: vw</a>
 		&nbsp;
-		<a href="javascript:s3.disabled=false; s1.disabled=true; s2.disabled=true;">
+		<a href="javascript:s3.disabled=false; s0.disabled=true; s1.disabled=true; s2.disabled=true;">
 			Layout: Grid</a>
 	</nav>
 	<p id="clear"></p>
@@ -36,7 +43,7 @@
 				</div>
 			</div>
 			<div class="cardPrice">
-				<p><b>Free!</b></p>
+				<p>Free!</p>
 			</div>
 		</div>
 		<div class="card">
@@ -47,7 +54,7 @@
 				</div>
 			</div>
 			<div class="cardPrice">
-				<p><b>$10.00</b></p>
+				<p>$10.00</p>
 			</div>
 		</div>
 		<div class="card">
@@ -55,11 +62,11 @@
 				<div class="cardDescriptionIcon fa fa-bolt"></div>
 				<div class="cardDescriptionText">
 					<p>Advanced tier<br />
-							(only for enterprise-level professionals)</p>
+						(only for enterprise-level professionals)</p>
 				</div>
 			</div>
 			<div class="cardPrice">
-				<p><b>$6,000.00</b></p>
+				<p>$6,000.00</p>
 			</div>
 		</div>
 	</div>
